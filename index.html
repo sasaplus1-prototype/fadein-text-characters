@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>fadein text characters</title>
+    <style>
+      .js-fadein {
+        animation-name: fadein;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+      }
+
+      @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="js-textarea" rows="6" cols="40">The quick brown fox jumps over the lazy dog</textarea>
+    <br>
+    <input id="js-execute" type="button" value="execute">
+    <p id="js-result"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
